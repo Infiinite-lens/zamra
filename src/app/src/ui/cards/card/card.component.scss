@@ -1,0 +1,40 @@
+.card-wrapper {
+  border-radius: 47px;
+  background-color: #d9d9d9;
+  width: 340px;
+  height: 190px;
+  display: flex;
+  text-align: center;
+  .left {
+    flex: 1;
+    background-color: #5959b3;
+    border-radius: 47px 0 0 47px;
+  }
+  .right {
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    border: 1px soid gray;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "RobotoBold";
+      font-size: 18px;
+    }
+    p {
+      //   font-family: "Roboto";
+      font-size: 8px;
+      color: black;
+    }
+    .link {
+      margin: 0;
+      a {
+        color: #f21818;
+      }
+    }
+  }
+}

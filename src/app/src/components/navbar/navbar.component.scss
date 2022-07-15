@@ -1,0 +1,91 @@
+nav {
+  height: 100px;
+  position: relative;
+  background-color: #204adf;
+  padding: 12px 0;
+
+  .left {
+    height: auto;
+    position: absolute;
+    width: 10%;
+    h1 {
+      a {
+        font-family: "RobotoBold";
+        font-size: 24px;
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+  .right {
+    width: 86%;
+    height: auto;
+    float: right;
+    position: absolute;
+    right: 0;
+    display: flex;
+    .list {
+      height: auto;
+      flex: 3;
+      ul {
+        display: flex;
+        li {
+          flex-direction: column;
+          list-style: none;
+          margin: 0 15px;
+          a {
+            font-family: "RobotoBold";
+            font-size: 17px;
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+    .buttons {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .log-in {
+        font-family: "RobotoBold";
+        font-size: 17px;
+        width: 80px;
+        height: 39px;
+        border-radius: 9px;
+        border: 3px solid #000000;
+        margin: 27px;
+      }
+      .create-account {
+        font-family: "RobotoBold";
+        font-size: 17px;
+        width: 137px;
+        height: 39px;
+        border-radius: 11px;
+        border: 3px solid #000000;
+      }
+    }
+    .manual {
+      flex: 1;
+      font-family: "Roboto";
+      font-size: 20px;
+      a {
+        right: 0;
+        flex: 1;
+        height: 51px;
+        border: 3px solid #000000;
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        i {
+          margin: 6px;
+        }
+      }
+    }
+  }
+}

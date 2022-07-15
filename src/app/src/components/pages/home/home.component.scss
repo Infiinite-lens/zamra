@@ -1,0 +1,55 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.home-body {
+  background-color: #214324;
+  color: #ffff;
+  .container-sm {
+    .row {
+      // height: 700px;
+      .col {
+        width: 100%;
+        h1 {
+          font-family: "RobotoBold";
+          font-size: 48px;
+        }
+        p {
+          font-family: "Roboto";
+          font-size: 24px;
+        }
+      }
+      .buttons-home {
+        align-items: center;
+        justify-content: center;
+        margin: 0 10%;
+
+        .log-in {
+          background-color: #204adf;
+          font-family: "RobotoBold";
+          font-size: 17px;
+          width: 80px;
+          height: 39px;
+          border-radius: 9px;
+          border: 3px solid #000000;
+          margin: 27px;
+          color: #ffff;
+        }
+        .create-account {
+          background-color: #204adf;
+          font-family: "RobotoBold";
+          font-size: 17px;
+          width: 137px;
+          height: 39px;
+          border-radius: 11px;
+          border: 3px solid #000000;
+          color: #ffff;
+        }
+      }
+    }
+  }
+}
+
+.online-services {
+  h1 {
+    font-family: "RobotoBold";
+    font-size: 36px;
+  }
+}
