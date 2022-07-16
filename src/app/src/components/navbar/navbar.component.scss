@@ -1,43 +1,47 @@
-nav {
-  height: 100px;
-  position: relative;
-  background-color: #204adf;
-  padding: 12px 0;
-
-  .left {
-    height: auto;
-    position: absolute;
-    width: 10%;
-    h1 {
-      a {
-        font-family: "RobotoBold";
-        font-size: 24px;
-        color: #000000;
-        text-decoration: none;
+.wrapper {
+  background-color: #2049dfd5;
+  width: 100%;
+  .row {
+    .left {
+      h1 {
+        i {
+          color: #000000;
+        }
       }
     }
-  }
-  .right {
-    width: 86%;
-    height: auto;
-    float: right;
-    position: absolute;
-    right: 0;
-    display: flex;
-    .list {
-      height: auto;
-      flex: 3;
-      ul {
-        display: flex;
-        li {
-          flex-direction: column;
-          list-style: none;
-          margin: 0 15px;
-          a {
-            font-family: "RobotoBold";
-            font-size: 17px;
-            text-decoration: none;
-            color: white;
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .list {
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+              text-decoration: none;
+              .list-item {
+                display: flex;
+                height: 64px;
+                align-items: center;
+                color: white;
+                border: 2px solid yellow;
+                margin: 2px;
+                i {
+                  color: brown;
+                  padding: 3px;
+                }
+                &:hover {
+                  color: brown;
+                  i {
+                    color: wheat;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -66,14 +70,14 @@ nav {
         border: 3px solid #000000;
       }
     }
-    .manual {
-      flex: 1;
+    .right {
       font-family: "Roboto";
       font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       a {
         right: 0;
-        flex: 1;
-        height: 51px;
         border: 3px solid #000000;
         border-radius: 21px;
         display: flex;
