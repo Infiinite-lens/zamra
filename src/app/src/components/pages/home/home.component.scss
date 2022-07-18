@@ -49,4 +49,10 @@
 
 .online-services {
   margin: 7px;
+  // display: flex;
+  // align-items: center;
+  justify-content: center;
+  .col {
+    margin: 4px;
+  }
 }
