@@ -2,29 +2,35 @@
   <div class="row">
     <div class="col-2 left">
       <h1>
-        <a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+        <a routerLink="/"
+          ><i
+            class="fa fa-home fa-2x"
+            style="color: #000000"
+            aria-hidden="true"
+          ></i
+        ></a>
       </h1>
     </div>
     <div class="col-6 center">
       <div class="list row">
         <ul>
           <li>
-            <a href="#">
+            <a routerLink="/">
               <div class="list-item col">
                 <i class="fa fa-2x fa-home" aria-hidden="true"></i>Home
               </div>
             </a>
           </li>
           <li>
-            <a href="#Registered-Products">
+            <a routerLink="/registered-products" routerLinkActive="active">
               <div class="list-item col">
                 <i class="fa fa-2x fa-registered" aria-hidden="true"></i>
                 Registered Products
-              </div></a
-            >
+                <hr /></div
+            ></a>
           </li>
           <li>
-            <a href="#Product-Recalls&Alerts">
+            <a routerLink="/product-recalls-and-alerts">
               <div class="list-item col">
                 <i class="fa fa-2x fa-refresh" aria-hidden="true"></i> Product
                 Recalls and Alerts
@@ -32,7 +38,7 @@
             >
           </li>
           <li>
-            <a href="#Registered-Premises">
+            <a routerLink="/registered-premises">
               <div class="list-item col">
                 <i class="fa fa-2x fa-universal-access" aria-hidden="true"></i>
                 Registered Premises
@@ -40,7 +46,7 @@
             >
           </li>
           <li>
-            <a href="#GMP-Compliant-Facilities">
+            <a routerLink="/gmp-compliant-facilities">
               <div class="list-item col">
                 <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
                 GMP Compliant Facilities
@@ -48,7 +54,7 @@
             >
           </li>
           <li>
-            <a href="#Clinical-Trials">
+            <a routerLink="/clinical-trials">
               <div class="list-item col">
                 <i class="fa fa-2x fa-wrench" aria-hidden="true"></i> Clinical
                 Trials
@@ -58,12 +64,12 @@
         </ul>
       </div>
     </div>
-    <div class="col-3 buttons">
+    <div class="col-2 buttons">
       <button class="log-in">Log In</button>
       <button class="create-account">Create Account</button>
     </div>
     <div class="col-2 right">
-      <a href="#System-User-Manual"
+      <a routerLink="/" href="#System-User-Manual"
         ><i class="fa fa-file-text fa-2x" aria-hidden="true"></i> System User
         Manual</a
       >
@@ -71,73 +77,80 @@
   </div>
 </div>
 
-<!-- <nav>
-  <div class="left">
-    <h1>
-      <a href="#"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
-    </h1>
+<!-- Smaller devices navbar -->
+<div class="hidden">
+  <nav class="navbar navbar-dark">
+    <div class="home">
+      <h1>
+        <a routerLink="/"
+          ><i
+            class="fa fa-home fa-2x"
+            style="color: #000000"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </h1>
+    </div>
+    <div class="hamburger">
+      <button class="navbar-toggler" (click)="toggleShow()" type="checkbox">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<!-- (click)="onClick()" -->
+<div *ngIf="isShown" class="row vertical-menu" id="divshow">
+  <div class="list">
+    <ul>
+      <li>
+        <a routerLink="/">
+          <div class="list-item">
+            <i class="fa fa-2x fa-home" aria-hidden="true"></i>
+            Home
+          </div></a
+        >
+      </li>
+      <li>
+        <a routerLink="/registered-products">
+          <div class="list-item">
+            <i class="fa fa-2x fa-registered" aria-hidden="true"></i>
+            Registered Products
+          </div></a
+        >
+      </li>
+      <li>
+        <a routerLink="/product-recalls-and-alerts">
+          <div class="list-item">
+            <i class="fa fa-2x fa-refresh" aria-hidden="true"></i> Product
+            Recalls and Alerts
+          </div></a
+        >
+      </li>
+      <li>
+        <a routerLink="/registered-premises">
+          <div class="list-item">
+            <i class="fa fa-2x fa-universal-access" aria-hidden="true"></i>
+            Registered Premises
+          </div></a
+        >
+      </li>
+      <li>
+        <a routerLink="/gmp-compliant-facilities">
+          <div class="list-item">
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            GMP Compliant Facilities
+          </div></a
+        >
+      </li>
+      <li>
+        <a routerLink="/clinical-trials">
+          <div class="list-item">
+            <i class="fa fa-2x fa-wrench" aria-hidden="true"></i> Clinical
+            Trials
+          </div></a
+        >
+      </li>
+    </ul>
   </div>
-  <div class="right">
-    <div class="list">
-      <ul>
-        <li>
-          <a href="#">
-            <div class="list-item">
-              <i class="fa fa-2x fa-home" aria-hidden="true"></i>Home
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#Registered-Products">
-            <div class="list-item">
-              <i class="fa fa-2x fa-registered" aria-hidden="true"></i>
-              Registered Products
-            </div></a
-          >
-        </li>
-        <li>
-          <a href="#Product-Recalls&Alerts">
-            <div class="list-item">
-              <i class="fa fa-2x fa-refresh" aria-hidden="true"></i> Product
-              Recalls and Alerts
-            </div></a
-          >
-        </li>
-        <li>
-          <a href="#Registered-Premises">
-            <div class="list-item">
-              <i class="fa fa-2x fa-universal-access" aria-hidden="true"></i>
-              Registered Premises
-            </div></a
-          >
-        </li>
-        <li>
-          <a href="#GMP-Compliant-Facilities">
-            <div class="list-item">
-              <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i> GMP
-              Compliant Facilities
-            </div></a
-          >
-        </li>
-        <li>
-          <a href="#Clinical-Trials">
-            <div class="list-item">
-              <i class="fa fa-2x fa-wrench" aria-hidden="true"></i> Clinical
-              Trials
-            </div></a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="buttons">
-      <button class="log-in">Log In</button>
-      <button class="create-account">Create Account</button>
-    </div>
-    <div class="manual">
-      <a href="#System-User-Manual"
-        ><i class="fa fa-file-text" aria-hidden="true"></i> System User
-        Manual</a
-      >
-    </div>
-  </div>
-</nav> -->
+</div>

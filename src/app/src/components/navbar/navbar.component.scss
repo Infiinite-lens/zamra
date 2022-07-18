@@ -3,11 +3,8 @@
   width: 100%;
   .row {
     .left {
-      h1 {
-        i {
-          color: #000000;
-        }
-      }
+      display: flex;
+      align-items: center;
     }
     .center {
       display: flex;
@@ -28,11 +25,11 @@
                 height: 64px;
                 align-items: center;
                 color: white;
-                border: 2px solid yellow;
+                // border: 2px solid yellow;
                 margin: 2px;
                 i {
                   color: brown;
-                  padding: 3px;
+                  // padding: 3px;
                 }
                 &:hover {
                   color: brown;
@@ -47,13 +44,12 @@
       }
     }
     .buttons {
-      flex: 2;
+      // flex: 2;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .log-in {
-        font-family: "RobotoBold";
         font-size: 17px;
         width: 80px;
         height: 39px;
@@ -62,8 +58,7 @@
         margin: 27px;
       }
       .create-account {
-        font-family: "RobotoBold";
-        font-size: 17px;
+        font-size: 13px;
         width: 137px;
         height: 39px;
         border-radius: 11px;
@@ -71,7 +66,6 @@
       }
     }
     .right {
-      font-family: "Roboto";
       font-size: 20px;
       display: flex;
       align-items: center;
@@ -91,5 +85,120 @@
         }
       }
     }
+    .menu {
+      width: 50px;
+      height: max-content;
+    }
+  }
+}
+.hidden {
+  background-color: #2049dfd5;
+  .hamburger {
+    margin: 5px;
+  }
+}
+.vertical-menu {
+  // position: absolute;
+  right: 0;
+  width: max-content;
+
+  margin: 5px;
+  .list {
+    height: fit-content;
+    // background-color: chartreuse;
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2px;
+        color: wheat;
+        a {
+          text-decoration: none;
+          .list-item {
+            color: #000000;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 1225px) {
+  .hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 1224px) {
+  .wrapper {
+    height: max-content;
+    .row {
+      .left {
+        min-width: 60px;
+        .fa-2x {
+          color: aliceblue !important;
+          font-size: 50px;
+        }
+      }
+      .center {
+        .list {
+          ul {
+            li {
+              a {
+                .list-item {
+                  color: #000000;
+                  font-size: 12px;
+                  display: flex;
+                  flex-direction: column;
+                  width: fit-content;
+                  text-align: center;
+                  .fa-2x {
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .buttons {
+        .log-in {
+          font-weight: bolder;
+          font-size: 10px;
+          width: fit-content;
+          width: 60px !important;
+          margin: 3px;
+        }
+        .create-account {
+          font-weight: bolder;
+          font-size: 8px;
+        }
+      }
+      .right {
+        font-size: 10px;
+        a {
+          margin: 2px;
+        }
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    background-color: #df7c20d5;
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    background-color: #df2080d5;
   }
 }
