@@ -104,15 +104,16 @@
 
   margin: 5px;
   .list {
-    height: fit-content;
+    // height: fit-content;
     // background-color: chartreuse;
+    color: black;
     ul {
       li {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2px;
-        color: wheat;
+
         a {
           text-decoration: none;
           .list-item {
